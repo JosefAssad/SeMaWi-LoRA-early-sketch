@@ -10,5 +10,6 @@ if __name__ == '__main__':
     fkwiki = Semawi('wiki.referencearkitektur.dk',
                     'Josef',
                     '!Pta5>,z<b&gT vlt6p6')
-    embed()
+    fkwiki.pull_lora_org_sys(referencearkitektur) # dear lord that's all it takes?
+    #embed()
 

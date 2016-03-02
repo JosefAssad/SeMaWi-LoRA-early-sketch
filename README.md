@@ -1,3 +1,5 @@
+THIS CODE IS FOR ILLUSTRATION ONLY. IT IS FULL OF GAPS, INCONSISTENCIES, AND IT DOES NOT MANDATE ANY PARTICULAR SOLUTION STRUCTURE. IT IS INTENDED ONLY TO ILLUSTRATE THE NOTION OF SMALL SINGLE PURPOSE PYTHON CLASSES FACILITATING THE INTEGRATION OF DANISH PUBLIC SECTOR SYSTEMS, WITH LoRA IN THE HEART AND RABBITMQ FOR TRANSPORT
+
 # PyLoRa
 
 PyLoRa is a Python API which speaks with the ReST interface exposed by a LoRa service. LoRa exposes a ReST interface implementing the OIO standard. This standard is large; the following is currently implemented in PyLoRa:
@@ -26,3 +28,14 @@ In the OIO standard (in the linked PDF), a BrugerRegistrering does not appear to
 
 The LoRa organisation/bruger JSON responses contain further elements not seen in the linked OIO standard: 'note', and 'livscykluskode'. PyLoRa implements these elements.
 
+# The dime tour
+
+This code is intended to paint a picture rather than for actual use in real world code. As such, this section points out the relevant bits. don't worry, there isn't a lot of code.
+
+Relevant bits:
+
+1. note the instantiation in client.py of a lora object and a semawi object.
+2. Note how the semawi object has a method indicating lora-awareness; this method pulls it systems from lora into a semawi template.
+3. It doesn't use rabbitmq. I did say the code is not complete. :)
+4. Note, separate module for python OIO objects. No serious dependencies, very stark python classes. The more stark, the more reusable in contexts we cannot predict.
+5. Technically, this code actually works for very limited definitions of the word "works". do not assume it does however.
