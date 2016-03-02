@@ -1,0 +1,14 @@
+argparse==1.2.1
+decorator==4.0.6
+ipython==4.0.1
+ipython-genutils==0.1.0
+mwclient==0.7.2
+path.py==8.1.2
+pexpect==4.0.1
+pickleshare==0.5
+ptyprocess==0.5
+requests==2.9.1
+simplegeneric==0.8.1
+six==1.10.0
+traitlets==4.0.0
+wsgiref==0.1.2
